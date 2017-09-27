@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "$PASSWD" | sudo openconnect $VPN_SERVER --authgroup $GROUP -u $USER --passwd-on-stdin &
+/bin/bash $@
